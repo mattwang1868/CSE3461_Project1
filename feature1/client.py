@@ -12,7 +12,7 @@ def get_messages():
     return
 
 # server ip and port
-SERVER_IP = "0.0.0.0"
+SERVER_IP = "10.193.105.135" # should be changed accordingly depending on server's IP
 SERVER_PORT = 12035
 
 # Create a socket for the sender

@@ -11,7 +11,7 @@ def get_messages():
     return
 
 # server ip and port
-SERVER_IP = "0.0.0.0" #TODO: change to IP of local machine
+SERVER_IP = "10.193.105.135" # should be changed accordingly depending on server IP
 SERVER_PORT = 12033
 
 # Create a socket for the sender
