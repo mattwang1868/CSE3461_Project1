@@ -13,7 +13,7 @@ def get_messages():
 
 # server ip and port
 SERVER_IP = "0.0.0.0"
-SERVER_PORT = 12033
+SERVER_PORT = 12035
 
 # Create a socket for the sender
 client_socket=socket(AF_INET, SOCK_STREAM)
@@ -21,9 +21,8 @@ client_socket=socket(AF_INET, SOCK_STREAM)
 # connect client to server
 client_socket.connect((SERVER_IP, SERVER_PORT))
 
-# send username to server
-username = input("enter username: ")
-client_socket.send(username.encode())
+# wait for server to accept
+input("Press enter to start transmissions")
 
 # create thread to get data from server
 listen_thread = threading.Thread(target=get_messages, args=())
